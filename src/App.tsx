@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/HeaderPage/Header";
+import Vision from "./components/VisionPage/Vision";
+import Goals from "./components/GoalsPage/Goals";
+import Network from "./components/NetworkPage/Network";
+import NetworkSecond from "./components/NetworkSecondPage/NetworkSecond";
+import Shop from "./components/ShopPage/Shop";
+import Contact from "./components/ContactPage/Contact";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar></Navbar>
+      <Header></Header>
+      <Vision></Vision>
+      <Goals></Goals>
+      {/* <Network></Network> */}
+      {/* <NetworkSecond></NetworkSecond> */}
+      <Shop></Shop>
+      <Contact></Contact>
     </div>
   );
 }

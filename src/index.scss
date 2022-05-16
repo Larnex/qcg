@@ -1,0 +1,29 @@
+@import "assets/styles/config.scss";
+@import "assets/styles/fontSize";
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.inner_container {
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  // height: 100%;
+  padding: 10% 0;
+  z-index: 1;
+
+  @media (max-width: 780px) {
+    max-width: 95%;
+    padding: 100px 0;
+    height: 60%;
+  }
+}

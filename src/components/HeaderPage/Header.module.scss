@@ -1,0 +1,28 @@
+@import "../../assets/styles/colors";
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: $black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container__image {
+  margin-bottom: 1em;
+  img {
+    width: 20em;
+  }
+}
+
+.title {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $yellow;
+  border: 2px $yellow solid;
+  margin: 0;
+  padding: 10px 50px;
+}

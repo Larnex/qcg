@@ -1,0 +1,46 @@
+@import "../../assets/styles/colors";
+
+.container {
+  height: 100vh;
+  width: 100%;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: $black;
+  text-align: center;
+
+  .background {
+    background-image: url("../../assets/elements/wave_yellow.png");
+    position: absolute;
+    text-align: center;
+    background-position: 10%;
+  }
+
+  .bg_transparent_black {
+    background: rgba(56, 56, 56, 0.85);
+    color: white;
+
+    p {
+      font-family: futura, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-align: left;
+      padding: 10px 30px;
+      font-size: 0.7em;
+      margin: 0;
+    }
+
+    li {
+      color: $yellow;
+
+      .text {
+        color: white;
+      }
+    }
+  }
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+}
