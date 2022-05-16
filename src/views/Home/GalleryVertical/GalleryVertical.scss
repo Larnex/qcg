@@ -1,0 +1,83 @@
+@import "../../../styles/config/config.scss";
+
+.grid-column-3 {
+  display: grid;
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
+  width: 100vw;
+  height: 100%;
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .img-container {
+      width: 50%;
+
+      @include media-query($medium-down) {
+        width: auto;
+      }
+
+      @include media-query($large-down) {
+        text-align: center;
+      }
+    }
+  }
+
+  @include media-query($medium-up) {
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    grid-row: 1fr;
+  }
+
+  @include media-query($medium-up) {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @include media-query($medium) {
+    img {
+      max-width: 90%;
+    }
+  }
+
+  figure {
+    position: relative;
+    z-index: 1;
+
+    img {
+      height: auto;
+      position: relative;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      margin-top: 15px;
+      position: relative;
+      text-align: start;
+      line-height: 1.7;
+    }
+  }
+
+  @include media-query($small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(240px, 1fr));
+    margin-top: 100px;
+    row-gap: 75px;
+
+    img {
+      max-width: 30%;
+    }
+
+    figcaption {
+      text-align: center !important;
+      font-size: 3vw;
+    }
+  }
+
+  @include media-query($small) {
+    padding-left: 0;
+  }
+}

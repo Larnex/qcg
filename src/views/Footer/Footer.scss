@@ -1,0 +1,49 @@
+@import "../../styles/config/config.scss";
+
+.footer-links {
+  z-index: 9998;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  background: #111;
+  padding: 1em 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 14px;
+
+  .footer-center {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @include media-query($large-down) {
+    font-size: 12px;
+  }
+
+  @include media-query($medium-down) {
+    font-size: 10px;
+  }
+
+  @include media-query($small) {
+    font-size: 1.5vw;
+  }
+
+  @media (max-width: 500px) {
+  }
+
+  span {
+    margin: 0 1em;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 0px solid red;
+
+    &:hover {
+      border-bottom: 1px solid red;
+    }
+  }
+}

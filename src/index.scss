@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "assets/styles/config.scss";
 @import "assets/styles/fontSize";
 
@@ -25,5 +26,85 @@ body {
     max-width: 95%;
     padding: 100px 0;
     height: 60%;
+=======
+@import "./styles/config/config.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: futura-pl, sans-serif;
+  font-weight: 400;
+  color: white;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== CANVAS ===== */
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  right: 0;
+  z-index: 5;
+
+  canvas {
+    width: 15% !important;
+    right: 0 !important;
+  }
+}
+
+.progress-bar__container {
+  height: 7%;
+  position: fixed;
+  z-index: 999;
+  bottom: 0%;
+  width: 100%;
+  background: #111;
+  text-align: center;
+}
+progress {
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 0;
+  margin-right: 0;
+  width: 80%;
+  -webkit-appearance: none;
+  appearance: none;
+
+  height: 3px;
+  border: none;
+  background: grey;
+}
+progress::-webkit-progress-bar {
+  background: grey;
+}
+progress::-webkit-progress-value {
+  background: #fff;
+  background-attachment: fixed;
+}
+progress::-moz-progress-bar {
+  background: #fff;
+  background-attachment: fixed;
+}
+
+.slide__content {
+  @include media-query($medium-up) {
+    top: 30%;
+  }
+
+  @include media-query($large-up) {
+    top: 25%;
+>>>>>>> 5858265 (add footer)
   }
 }

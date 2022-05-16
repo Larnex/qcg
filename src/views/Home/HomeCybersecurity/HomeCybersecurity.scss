@@ -1,0 +1,70 @@
+@import "../../../styles/config/config.scss";
+
+.slide--4 {
+  .slide__content {
+    position: absolute;
+    height: 100%;
+    // width: 85%;
+
+    .slide__relative--container {
+      justify-content: center;
+      align-items: start;
+
+      @include media-query($medium-up) {
+        justify-content: center;
+      }
+
+      @include media-query($large-up) {
+        justify-content: start;
+      }
+    }
+
+    h1 {
+      display: block;
+      font-weight: 400;
+      margin-bottom: 20px;
+      position: relative;
+      top: 0;
+      left: 0;
+
+      @include media-query($small) {
+        font-size: $fs-small-h1;
+      }
+
+      @include media-query($medium-up) {
+        font-size: $fs-medium-h1;
+      }
+
+      @include media-query($large-up) {
+        font-size: $fs-large-h1;
+      }
+
+      @include media-query($widescreen) {
+        font-size: $fs-widescreen-h1;
+        width: 100%;
+      }
+    }
+
+    .slide__text {
+      position: relative;
+      white-space: normal;
+      text-align: justify;
+
+      @include media-query($small) {
+        font-size: $fs-small-p;
+      }
+
+      @include media-query($medium-up) {
+        font-size: $fs-medium-p;
+      }
+
+      @include media-query($large-up) {
+        font-size: $fs-large-p;
+      }
+
+      @include media-query($widescreen) {
+        font-size: $fs-widescreen-p;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../styles/config/config.scss";
+
+.header {
+  position: fixed;
+  width: 100%;
+  // min-height: 50px;
+  max-height: 72px;
+  z-index: 9998;
+  background: #111;
+
+  @include media-query($medium-down) {
+    background: $black;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  @include media-query($large-up) {
+    max-height: 150px;
+  }
+
+  &__wrapper {
+    position: relative;
+    padding-right: 24px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+
+    @include media-query($large-up) {
+      // grid-template-columns: 10% 80% 10%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+}
